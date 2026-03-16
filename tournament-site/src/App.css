@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+margin:0;
+background:#0b0f17;
+font-family:"Inter", sans-serif;
+color:#e5e7eb;
+}
+
+/* MAIN PAGE */
+
+.container{
+max-width:1400px;
+margin:auto;
+padding:60px 40px;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:60px;
+}
+
+h1{
+font-size:34px;
+font-weight:700;
+letter-spacing:-0.5px;
+margin:0;
+}
+
+.live{
+display:flex;
+align-items:center;
+gap:6px;
+font-weight:600;
+font-size:14px;
+color:#ef4444;
+}
+
+.live-dot{
+width:9px;
+height:9px;
+background:#ef4444;
+border-radius:50%;
+animation:pulse 1.2s infinite;
+}
+
+@keyframes pulse{
+0%{opacity:1}
+50%{opacity:.35}
+100%{opacity:1}
+}
+
+/* EVENT */
+
+.event{
+margin-bottom:70px;
+}
+
+h2{
+font-size:20px;
+font-weight:600;
+margin-bottom:18px;
+color:#93c5fd;
+}
+
+/* BRACKET GRID */
+
+.bracket-grid{
+display:grid;
+grid-template-columns: 150px 220px 220px 200px;
+gap:32px;
+}
+
+/* ROUND */
+
+.round{
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+.round-title{
+font-size:13px;
+font-weight:600;
+letter-spacing:.5px;
+text-transform:uppercase;
+color:#94a3b8;
+margin-bottom:4px;
+}
+
+/* MATCH */
+
+.match{
+background:#121826;
+border-radius:8px;
+padding:8px 10px;
+box-shadow:0 2px 6px rgba(0,0,0,.35);
+}
+
+.match div{
+padding:4px 6px;
+font-size:14px;
+border-radius:4px;
+}
+
+/* WINNER */
+
+.winner{
+background:#16a34a;
+color:white;
+font-weight:600;
+}
+
+/* FINAL MATCH */
+
+.final{
+background:#172036;
+}
+
+/* CHAMPION */
+
+.champion{
+margin-top:10px;
+padding:8px 10px;
+font-size:14px;
+font-weight:600;
+background:#1d4ed8;
+border-radius:6px;
+color:white;
+text-align:center;
+}
+
+/* MOBILE */
+
+@media (max-width:900px){
+
+.bracket-grid{
+grid-template-columns:1fr;
+}
+
+.round{
+margin-bottom:20px;
+}
+
+}
+.player-pic {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.header p.update {
+  font-size: 14px;       /* smaller than the title */
+  font-weight: 400;      /* normal weight */
+  color: #94a3b8;        /* lighter gray */
+  margin-top: 4px;       /* space between h2 and paragraph */
+  margin-bottom: 20px;   /* optional spacing after */
+}
